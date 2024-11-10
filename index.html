@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script type="text/javascript" src="./script.js"></script>
     <!-- Zomato logo in the tab -->
     <link
       rel="icon"
@@ -164,25 +164,67 @@
           <p>We will send your link, open it and download</p>
           <div class="radio__button_container">
             <div>
-              <input type="radio" id="Email" name="download_app"/>
-              <label for="Email" style="font-size: 14px;">Email</label>
+              <input type="radio" id="Email" name="download_app" />
+              <label for="Email" style="font-size: 14px">Email</label>
             </div>
             <div>
-              <input type="radio" id="Phone" name="download_app"/>
-              <label for="Phone" style="font-size: 14px;">Phone</label>
+              <input type="radio" id="Phone" name="download_app" />
+              <label for="Phone" style="font-size: 14px">Phone</label>
             </div>
           </div>
           <div class="input_container">
-            <input type="text" placeholder="Email"/>
+            <input type="text" placeholder="Email" />
             <button>Share App Link</button>
           </div>
           <div class="download_app_container">
             <h5>Downlaod App From</h5>
             <div>
-              <img src="./images/appleStore.png" alt="appleStore">
-              <img src="./images/playStore.png" alt="playStore">
+              <img src="./images/appleStore.png" alt="appleStore" />
+              <img src="./images/playStore.png" alt="playStore" />
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!--Explore Options section-->
+    <section class="container Explore__options">
+      <h1>Explore Options Near Me</h1>
+      <div class="Options">
+        <div class="dropdown">
+          <div
+            onclick="toggleDropdown(event)"
+            id="dropdownButton"
+            class="dropbtn__parent"
+          >
+            <span class="dropbtn">Popular Cuisines Near Me</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div id="dropdownContent" class="dropdown-content">
+            <span>Burger Hut</span>
+            <span>Kiyaso</span>
+            <span>Mr.Chef</span>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div onclick="toggleDropdown()" class="dropbtn__parent">
+            <span class="dropbtn">Popular Restaurants Near Me</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div id="dropdownContent" class="dropdown-content">
+            <span>Burger Hut</span>
+            <span>Kiyaso</span>
+            <span>Mr.Chef</span>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div onclick="toggleDropdown()" class="dropbtn__parent">
+            <span class="dropbtn">Popular City Club Near Me</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div id="dropdownContent" class="dropdown-content">
+            <span>Burger Hut</span>
+            <span>Kiyaso</span>
+            <span>Mr.Chef</span>
           </div>
         </div>
       </div>

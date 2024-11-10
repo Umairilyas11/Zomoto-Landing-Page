@@ -320,3 +320,61 @@
 .right .download_app_container div img {
   width: 35%;
 }
+@media only screen and (max-width: 1300px) {
+  .get__the_app .semiContainer .left,
+  .get__the_app .semiContainer .right {
+    flex: 1;
+  }
+  .get__the_app .semiContainer {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .get__the_app {
+    padding: 2rem 0;
+  }
+  .get__the_app .semiContainer {
+    width: 95%;
+    flex-direction: column;
+  }
+}
+
+.Explore__options h1 {
+  font-weight: 600;
+  padding: 2rem 0;
+}
+.Explore__options .dropdown {
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.Explore__options .dropbtn__parent {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px lightgray;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 90%;
+  cursor: pointer;
+  background-color: white;
+  margin: auto;
+}
+.Explore__options .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 90%;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.show {
+  display: block;
+}
