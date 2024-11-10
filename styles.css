@@ -398,7 +398,7 @@
 }
 .section1__buttonContainer button {
   padding: 5px;
-  width: 100px;
+  width: auto;
   border: 1px solid gray;
   border-radius: 5px;
   background-color: transparent;
